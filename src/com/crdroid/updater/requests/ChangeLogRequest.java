@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2015 crDroid Android
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.requests;
+package com.crdroid.updater.requests;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;

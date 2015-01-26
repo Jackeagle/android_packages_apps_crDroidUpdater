@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2015 crDroid Android
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.misc;
+package com.crdroid.updater.misc;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -26,11 +26,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 
 import com.android.volley.toolbox.RequestFuture;
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.NotifyingWebView;
-import com.cyanogenmod.updater.UpdateApplication;
-import com.cyanogenmod.updater.requests.ChangeLogRequest;
-import com.cyanogenmod.updater.utils.Utils;
+import com.crdroid.updater.R;
+import com.crdroid.updater.NotifyingWebView;
+import com.crdroid.updater.UpdateApplication;
+import com.crdroid.updater.requests.ChangeLogRequest;
+import com.crdroid.updater.utils.Utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2015 crDroid Android
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -7,15 +7,15 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.receiver;
+package com.crdroid.updater.receiver;
 
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.misc.UpdateInfo;
+import com.crdroid.updater.R;
+import com.crdroid.updater.misc.UpdateInfo;
 import java.io.File;
 
 public class DownloadNotifier {

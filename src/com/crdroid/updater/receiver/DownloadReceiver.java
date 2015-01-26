@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2015 crDroid Android
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.receiver;
+package com.crdroid.updater.receiver;
 
 import android.app.DownloadManager;
 import android.app.StatusBarManager;
@@ -19,24 +19,24 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.misc.Constants;
-import com.cyanogenmod.updater.misc.UpdateInfo;
-import com.cyanogenmod.updater.service.DownloadCompleteIntentService;
-import com.cyanogenmod.updater.service.DownloadService;
-import com.cyanogenmod.updater.utils.Utils;
+import com.crdroid.updater.R;
+import com.crdroid.updater.misc.Constants;
+import com.crdroid.updater.misc.UpdateInfo;
+import com.crdroid.updater.service.DownloadCompleteIntentService;
+import com.crdroid.updater.service.DownloadService;
+import com.crdroid.updater.utils.Utils;
 
 import java.io.IOException;
 
 public class DownloadReceiver extends BroadcastReceiver{
     private static final String TAG = "DownloadReceiver";
 
-    public static final String ACTION_START_DOWNLOAD = "com.cyanogenmod.cmupdater.action.START_DOWNLOAD";
+    public static final String ACTION_START_DOWNLOAD = "com.crdroid.cmupdater.action.START_DOWNLOAD";
     public static final String EXTRA_UPDATE_INFO = "update_info";
 
-    public static final String ACTION_DOWNLOAD_STARTED = "com.cyanogenmod.cmupdater.action.DOWNLOAD_STARTED";
+    public static final String ACTION_DOWNLOAD_STARTED = "com.crdroid.cmupdater.action.DOWNLOAD_STARTED";
 
-    static final String ACTION_INSTALL_UPDATE = "com.cyanogenmod.cmupdater.action.INSTALL_UPDATE";
+    static final String ACTION_INSTALL_UPDATE = "com.crdroid.cmupdater.action.INSTALL_UPDATE";
     static final String EXTRA_FILENAME = "filename";
 
     @Override

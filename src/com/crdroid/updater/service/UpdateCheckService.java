@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2015 crDroid Android
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.service;
+package com.crdroid.updater.service;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -27,15 +27,15 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.UpdateApplication;
-import com.cyanogenmod.updater.requests.UpdatesJsonObjectRequest;
-import com.cyanogenmod.updater.UpdatesSettings;
-import com.cyanogenmod.updater.misc.Constants;
-import com.cyanogenmod.updater.misc.State;
-import com.cyanogenmod.updater.misc.UpdateInfo;
-import com.cyanogenmod.updater.receiver.DownloadReceiver;
-import com.cyanogenmod.updater.utils.Utils;
+import com.crdroid.updater.R;
+import com.crdroid.updater.UpdateApplication;
+import com.crdroid.updater.requests.UpdatesJsonObjectRequest;
+import com.crdroid.updater.UpdatesSettings;
+import com.crdroid.updater.misc.Constants;
+import com.crdroid.updater.misc.State;
+import com.crdroid.updater.misc.UpdateInfo;
+import com.crdroid.updater.receiver.DownloadReceiver;
+import com.crdroid.updater.utils.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -57,11 +57,11 @@ public class UpdateCheckService extends IntentService
     private static final boolean TESTING_DOWNLOAD = false;
 
     // request actions
-    public static final String ACTION_CHECK = "com.cyanogenmod.cmupdater.action.CHECK";
-    public static final String ACTION_CANCEL_CHECK = "com.cyanogenmod.cmupdater.action.CANCEL_CHECK";
+    public static final String ACTION_CHECK = "com.crdroid.cmupdater.action.CHECK";
+    public static final String ACTION_CANCEL_CHECK = "com.crdroid.cmupdater.action.CANCEL_CHECK";
 
     // broadcast actions
-    public static final String ACTION_CHECK_FINISHED = "com.cyanogenmod.cmupdater.action.UPDATE_CHECK_FINISHED";
+    public static final String ACTION_CHECK_FINISHED = "com.crdroid.cmupdater.action.UPDATE_CHECK_FINISHED";
     // extra for ACTION_CHECK_FINISHED: total amount of found updates
     public static final String EXTRA_UPDATE_COUNT = "update_count";
     // extra for ACTION_CHECK_FINISHED: amount of updates that are newer than what is installed
